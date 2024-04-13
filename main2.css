@@ -1,0 +1,25 @@
+.side {
+    background-color: #ff838b;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    position: fixed;
+    top: auto;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* フレックスアイテムを縦に並べる */
+    list-style: none;
+ }
+
+.side li {
+    font-size: 30px;
+    padding:5px;
+}  
+  
+
+.side a {	
+    text-decoration: none;
+    color: #4b4b4b;
+}
+  
