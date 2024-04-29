@@ -31,143 +31,150 @@ a:active{
     text-decoration:underline !important;
 }
 
-.header {
-    background-color: #d9ebd9;
-    padding: 20px;
-    color: #64a75b;
+@media only screen and (min-width: 600px) {
+    .header {
+        background-color: #d9ebd9;
+        /* padding: 20px; */
+        color: #64a75b;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        background-color: #D9D9D9;
+    }
+
+    .text{
+        text-align: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .image{
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .image img{
+        margin: 0;
+        padding: 0;
+        max-height: 80px;
+    }
+
+    .title{
+        display: inline-flex;
+        left: 0;
+    }
+
+    .logo{
+        display: inline-flex;
+        position: absolute;
+        margin-left: 85%;
+        text-align: right;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: right;
+        width: 100%;
+        text-align: right;
+    }
+
+    .contain{
+        flex-grow: 1;
+        box-sizing: border-box;
+        width: 83vw;
+    }
+
+    .side {
+        background-color: #CBCBCB;
+        text-align: center;
+        margin: 0;
+        justify-content:space-around;
+        /* position: fixed; */
+        width: 17vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    .side a{
+        border-bottom: solid 2px #919191;
+        border-right: solid 2px #919191;
+    }
+
+    .box {
+        flex-direction: column;
+        display: block;
+        height: 100px;
+        /* width: calc(100% - 40px); */
+        box-sizing: border-box;
+        padding: 0;
+        margin: 15%;
+    }
+
+    #box_change{
+        background-color: #D9D9D9;
+        border-right: none;
+    }
+
+    .side_content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .title2{
+        text-align: left;
+        margin: 5%;
+    }
+
+    .slider img {
+        width:100%;/*スライダー内の画像を横幅100%に*/
+        height:auto;
+    }
+
+    /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+    .slider .slick-slide {
+        margin:0 10px;/*スライド左右の余白調整*/
+    }
+
+    .top_news{
+        text-align: left;
+        margin: 5%;
+        background: rgba(165, 31, 31, 27%);
+        height: 10%;
+        padding: 7px;
+        border: solid 1.5px #FF0000;
+    }
+
+    .news_top{
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .em_news{
+        font-size: 17px;
+    }
+
+    .footer { 
+        color: white;
+        background-color: rgb(9, 94, 9);
+        box-sizing: border-box;
+    }
+
+    .footer p{
+        height: 10vh;
+    }
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    background-color: #D9D9D9;
-}
-
-.text{
-    text-align: right;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.image{
-    display: flex;
-    justify-content: center;
-    column-gap: 10%;
-    width: 100%;
-}
-
-.title{
-    display: flex;
-    width: 80;
-    margin-left: 0;
-    padding: 0;
-}
-
-.logo{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 10vw;
-    height: 10vw;
-    text-align: right;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    text-align: right;
-    width: 100%;
-    text-align: right;
-}
-
-.contain{
-    flex-grow: 1;
-    box-sizing: border-box;
-    width: 83vw;
-}
-
-.side {
-    background-color: #CBCBCB;
-    text-align: center;
-    margin: 0;
-    justify-content:space-around;
-    /* position: fixed; */
-    width: 17vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-.side a{
-    border-bottom: solid 2px #919191;
-    border-right: solid 2px #919191;
-}
-
-.box {
-    flex-direction: column;
-    display: block;
-    height: 100px;
-    /* width: calc(100% - 40px); */
-    box-sizing: border-box;
-    padding: 0;
-    margin: 15%;
-}
-
-#box_change{
-    background-color: #D9D9D9;
-    border-right: none;
-}
-
-.side_content{
-    width: 100%;
-    height: 100%;
-}
-
-.title2{
-    text-align: left;
-    margin: 5%;
-}
-
-.slider img {
-    width:100%;/*スライダー内の画像を横幅100%に*/
-    height:auto;
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-    margin:0 10px;/*スライド左右の余白調整*/
-}
-
-.top_news{
-    text-align: left;
-    margin: 5%;
-    background: rgba(165, 31, 31, 27%);
-    height: 10%;
-    padding: 7px;
-    border: solid 1.5px #FF0000;
-}
-
-.news_top{
-    margin: 0;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.em_news{
-    font-size: 17px;
-}
-
-.footer { 
-    color: white;
-    background-color: rgb(9, 94, 9);
-    box-sizing: border-box;
-}
-
-.footer p{
-    height: 10vh;
+@media onlt screen and (max-width: 600px){
+    
 }
