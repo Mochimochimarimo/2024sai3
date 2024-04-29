@@ -4,7 +4,6 @@ body{
     border: 0;
     -webkit-text-size-adjust: 100%;
     z-index: 10;
-    width: 100%;
 }
 
 a{
@@ -34,7 +33,8 @@ a:active{
 @media only screen and (min-width: 600px) {
     .header {
         background-color: #d9ebd9;
-        /* padding: 20px; */
+        margin: 0;
+        padding: 0;
         color: #64a75b;
     }
 
@@ -49,12 +49,16 @@ a:active{
         text-align: right;
         font-size: 30px;
         font-weight: bold;
+        margin-right: 20px;
     }
 
     .image{
         display: flex;
         width: 100%;
-        padding: 15px;
+        padding-top: 15px;
+        padding-left: 15px;
+        margin: 0;
+        padding-right: 0;
     }
 
     .image img{
@@ -175,6 +179,10 @@ a:active{
     }
 }
 
-@media onlt screen and (max-width: 600px){
-    
+@media only screen and (max-width: 600px){
+    .header{
+        width: 100vw;        
+        background-color: #d9ebd9;
+        color: #64a75b;
+    }
 }
