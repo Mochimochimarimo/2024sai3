@@ -39,6 +39,11 @@ a:active{
         color: #64a75b;
     }
 
+    .uenosyuu{
+        display: flex;
+        padding-bottom: 10px;
+    }
+
     /*　ハンバーガーボタン　*/
     .hamburger {
         display: none;
@@ -147,30 +152,40 @@ a:active{
     .image{
         display: flex;
         width: 100%;
-        padding-top: 15px;
-        padding-left: 15px;
         margin: 0;
-        padding-right: 0;
-    }
-
-    .image img{
-        margin: 0;
-        padding: 0;
-        max-height: 80px;
+        padding: 10px;
     }
 
     .title{
+        max-height: 80px;
+        align-self: center;
+    }
+
+    .title img{
+        width: 100%;
         display: inline-flex;
         left: 0;
         margin: 0%;
+    }
 
+    .text{
+        width: 50%;
+    }
+
+    .text p{
+        color: #626262;
+        font-size: 1.7vw;
     }
 
     .logo{
-        display: inline-flex;
-        position: absolute;
-        margin-left: 85%;
         text-align: right;
+        width: 80%;
+        padding: 0;
+        margin-left: 15%;
+    }
+
+    .logo img{
+        width: 45%;
     }
 
     .container{
@@ -185,7 +200,9 @@ a:active{
     .contain{
         flex-grow: 1;
         box-sizing: border-box;
-        width: 83vw;
+        text-align: right;
+        width: 80vw;
+        padding: 5%;
     }
 
     .side {
@@ -193,7 +210,6 @@ a:active{
         text-align: center;
         margin: 0;
         justify-content:space-around;
-        /* position: fixed; */
         width: 17vw;
         height: 100%;
         display: flex;
@@ -211,7 +227,7 @@ a:active{
         flex-direction: column;
         display: block;
         height: 100px;
-        /* width: calc(100% - 40px); */
+        width: calc(100% - 40px);
         box-sizing: border-box;
         padding: 0;
         margin: 15%;
@@ -229,7 +245,6 @@ a:active{
 
     .title2{
         text-align: left;
-        margin: 5%;
     }
 
     .slider img {

@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>彩西祭2024</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tema.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .header { background-color: rgb(217, 235, 217); padding: 10px; color: rgb(100, 167, 91); }
-    .header h1 { margin: 0; }
-    .header .icons { float: right; }
-    .nav { background-color: #f0f0f0; padding: 10px 0; }
-    .nav ul { list-style-type: none; margin: 0; padding: 0; }
-    .nav ul li { display: inline; margin-right: 20px; }
-    .content { background-color: white; min-height: 500px; }
-  </style>
 </head>
 <body>
   <div class="all">
     <div class="header">
-      <div class="image">
-        <div class="title"><img src="files/title.svg"></div>
-        <div class="logo"><img src="files/annibersarylogo.svg"></div>
+      <div class="uenosyuu">
+        <div class="image">
+          <div class="title"><img src="files/title.svg"></div>
+        </div>
+        <div class="text">
+          <div class="logo"><img src="files/annibersarylogo.svg"></div>
+          <p>静岡県立浜松西高等学校・同中等部</p>
+        </div>
       </div>
-      <div class="text">
-        <p>静岡県立浜松西高等学校・同中等部</p>
-      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+            <nav class="hamburger_list">
+                <div id="header_top" class="header_menu"><a href="index.html" class="header_menu"><h1>トップページ</h1></a></div>
+                <div id="header_contents" class="header_menu toggle_menu"><a href="index.html#section_contents" class="header_menu"><h1>コンテンツ</h1></a><div class="subMenu"><span></span><span></span></div></div>
+                <a class="menu_open" href="pamphlet.html"><h3>デジタル版パンフレット</h3></a>
+                <a class="menu_open" href="themeillust.html"><h3>テーマイラスト紹介</h3></a>
+                <a class="menu_open" href="map.html"><h3>校内マップ</h3></a>
+                <a class="menu_open" href="tenji.html"><h3>展示内容紹介</h3></a>
+                <div id="header_articles" class="header_menu"><a href="articles.html"><h1>記事一覧</h1></a></div>
+                <div id="header_about" class="header_menu"><a href="about.html" class="header_menu"><h1>彩西祭について</h1></a></div>
+            </nav>
+            <div class="circle-bg"></div>
     </div>
     <div class="main">
       <div class="side">
-        <a href="index.html"><div class="box"><img src="files/home.svg" class="side_content"></div></a>
-        <a href="tema.html"  id="box_change"><div class="box"><img src="files/tema.svg" class="side_content"></div></a>
+        <a href="index.html" id="box_change"><div class="box"><img src="files/home.svg" class="side_content"></div></a>
+        <a href="tema.html"><div class="box"><img src="files/tema.svg" class="side_content"></div></a>
         <a href="#"><div class="box"><img src="files/content.svg" class="side_content"></div></a>
         <a href="#"><div class="box"><img src="files/news.svg" class="side_content"></div></a>
         <a href="#"><div class="box"><img src="files/sai3.svg" class="side_content"></div></a>
@@ -43,9 +48,14 @@
           <div class="title2">
             <img src="files/tema/title.svg">
           </div>
-            <div class="content">
-              <p>演者と観客の垣根を超え、皆が一体となって高揚し、魅せられる「ライブ」。始まりの合図とともにライトが落ち、静寂の中、高まる緊張感。それが一瞬で</p>
-            </div>
+          <div class="tema">
+            <p>演者と観客の垣根を超え、皆が一体となって高揚し、魅せられる「ライブ」。
+              始まりの合図とともにライトが落ち、静寂の中、高まる緊張感。それが一瞬ではじけ飛ぶような、
+              熱気や臨場感のあふれる文化祭を創り上げたいという思いを込めました。創造を通して磨き上げられた、クラス、学年、浜西の団結力で、
+              お客様に最高のおもてなしを提供します。<br>
+              西山台を舞台に、浜西が見せる「LIVE」。その一員に、ぜひ、貴方も。
+            </p>
+          </div>
         </div>
         <div class="footer">
           <!-- フッター情報を挿入 -->
@@ -57,5 +67,41 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="slide.js"></script>
+  <!--Hamburger buttond JS-->
+  <script>
+    $(function() {
+      $('.hamburger').click(function() {
+         $(this).toggleClass('active');
+                    
+        if ($(this).hasClass('active')) {
+            $('.hamburger_list').addClass('active');
+            $(".circle-bg").addClass('circleactive');//丸背景にcircleactiveクラスを付与
+        } else {
+            $('.hamburger_list').removeClass('active');
+            $(".circle-bg").removeClass('circleactive');//丸背景にcircleactiveクラスを付与
+        }
+       });
+
+     $('.subMenu').click(function() {
+       $(this).toggleClass('active');
+                    
+        if ($(this).hasClass('active')) {
+            $('.subMenu').addClass('active');
+            $('.menu_open').addClass('active');
+        } else {
+            $('.subMenu').removeClass('active');
+            $('.menu_open').removeClass('active');
+        }
+     });
+    });
+  </script>
+  <!--EmbedPost読み込み JS-->
+  <script>
+    $(function(){
+      $("#articles_holder").load("latestposts.html");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
