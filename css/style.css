@@ -73,6 +73,28 @@ a:active{
         display: none ;
     }
 
+    .header_menu{
+        position: relative;
+        width: 130px;
+        margin:0;
+        padding: 0px ; 
+        z-index: 90;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .subMenu span{
+        display: none;
+    }
+
+    .subMenu{
+        display: none;
+    }
+
+    .header_menu{
+        display: none;
+    }
+
     nav.hamburger_list h1{
         display: inline-block;
         font-family: 'Zen Kaku Gothic Antique';
@@ -256,6 +278,14 @@ a:active{
         background-color: rgb(217, 235, 217);
         padding: 10px;
         color: rgb(100, 167, 91);
+    }
+
+    .title img{
+        width: 50%;
+    }
+
+    .logo img{
+        width: 25%;
     }
 
     /*　ハンバーガーボタン　*/
