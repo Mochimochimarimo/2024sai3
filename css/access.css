@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-text-size-adjust: 100%;
+    z-index: 10;
+    font-family: 'Zen Kau Gothic New', sans-serif;
+}
+
+a{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.all{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover,
+a:active{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration:underline !important;
+}
+@media only screen and (min-width: 600px) {
+    .access{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .access p{
+        font-family: 'Zen Kau Gothic New', sans-serif;
+        letter-spacing: 0.12em;
+        font-weight: 530;
+        line-height: 2.3em;
+        font-size: 18px;
+    }
+
+    .access iframe{
+        margin-left: 5%;
+        width: 95%;
+        height: 500px;
+    }
+
+    #red{
+        margin-top: 5%;
+        color: #FF5345;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+}

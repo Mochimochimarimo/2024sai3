@@ -4,7 +4,7 @@ body{
     border: 0;
     -webkit-text-size-adjust: 100%;
     z-index: 10;
-    font-family: Arial, sans-serif;
+    font-family: 'Zen Kau Gothic New', sans-serif;
 }
 
 a{
@@ -227,10 +227,13 @@ a:active{
         flex-direction: column;
         display: block;
         height: 100px;
-        width: calc(100% - 40px);
+        width: 100%;
         box-sizing: border-box;
-        padding: 0;
-        margin: 15%;
+        padding: 10%;
+    }
+
+    .box img{
+        width: 100%;
     }
 
     #box_change{
@@ -262,7 +265,7 @@ a:active{
         text-align: left;
         margin: 5%;
         background: rgba(165, 31, 31, 27%);
-        height: 10%;
+        height: 15%;
         padding: 7px;
         border: solid 1.5px #FF0000;
     }
