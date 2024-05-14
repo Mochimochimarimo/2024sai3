@@ -42,5 +42,7 @@ a:active{
 }
 
 @media only screen and (max-width: 600px){
-
+    .title2_mobile{
+        margin-top: 24%;
+    }
 }

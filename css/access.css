@@ -58,5 +58,29 @@ a:active{
 }
 
 @media only screen and (max-width: 600px){
+    .access{
+        width: 100vw;
+        padding-left: 2%;
+    }
 
+    .access p{
+        font-family: 'Zen Kau Gothic New', sans-serif;
+        letter-spacing: 0.12em;
+        font-weight: 530;
+        line-height: 2.3em;
+        font-size: 13px;
+        padding: 3%;
+    }
+
+    .access iframe{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        height: 200px;
+    }
+
+    #red{
+        margin-top: 5%;
+        color: #FF5345;
+    }
 }

@@ -65,7 +65,12 @@ a:active{
         pointer-events: auto;
 
     }
-      
+
+    .uenosyuu_mobile img{
+        display: none;
+    }
+
+
     /* このクラスを、jQueryで付与・削除する */
     nav.hamburger_list.active {
     }
@@ -98,6 +103,10 @@ a:active{
 
     .header_menu{
         display: none;
+    }
+
+    .title2_mobile{
+        display: none
     }
 
     nav.hamburger_list h1{
@@ -293,17 +302,39 @@ a:active{
 
 @media only screen and (max-width: 600px){
     .header {
-        background-color: rgb(217, 235, 217);
-        padding: 10px;
+        position: fixed;
+        background-color: #C7CAB6;
         color: rgb(100, 167, 91);
+        width: 100vw;
+        height: 13%;
     }
 
-    .title img{
-        width: 50%;
+    .uenosyuu img{
+        display: none;
     }
 
-    .logo img{
-        width: 25%;
+    .uenosyuu p{
+        display: none;
+    }
+
+    .uenosyuu_mobile{
+        display: flex;
+    }
+
+    .headerbox{
+        display: flex;
+    }
+
+
+    .headerbox{
+        position: relative;
+        right: -20px;
+    }
+
+    .logo_mobile img{
+        position: relative;
+        width: 90px;
+        height: 45px;
     }
 
     /*　ハンバーガーボタン　*/
@@ -312,7 +343,7 @@ a:active{
         position: fixed;
         z-index : 903;
         right : 13px;
-        top   : 12px;
+        top   : 45px;
         width : 42px;
         height: 42px;
         cursor: pointer;
@@ -440,6 +471,8 @@ a:active{
         border: none !important;
     }
 
+    
+
     /*丸の拡大*/
     .circle-bg{
         position: fixed;
@@ -458,6 +491,65 @@ a:active{
 
     .circle-bg.circleactive{
         transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+    }
+
+    .side a{
+        display: none;
+    }
+
+    .slider{
+        display: none;
+    }
+    .slick-initialized{
+        display: none;
+    }
+
+    .slick-slider{
+        display: none;
+    }
+
+    .slider li{
+        display: none;
+    }
+
+    .contain ul{
+        display: none;
+    }
+
+    .contain li{
+        display: none;
+    }
+
+    .title2{
+        display: none;
+    }
+
+    .title2_mobile{
+        margin-top: 23%;
+        width: 100vw;
+    }
+
+    .title2_mobile img{
+        width: 100vw;
+    }
+
+    .top_news{
+        text-align: left;
+        margin: 5%;
+        background: rgba(165, 31, 31, 27%);
+        height: 15%;
+        padding: 7px;
+        border: solid 1.5px #FF0000;
+    }
+
+    .news_top{
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .em_news{
+        font-size: 17px;
     }
 
 }
